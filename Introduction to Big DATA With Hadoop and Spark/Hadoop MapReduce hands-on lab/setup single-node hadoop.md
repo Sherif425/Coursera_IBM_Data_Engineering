@@ -26,30 +26,21 @@ The steps outlined in this lab use the single-node Hadoop Version 3.3.6 Hadoop
 
         bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.6.jar wordcount data.txt output
     
-    8. This may take some time.
+        This may take some time.
 
-Once the word count runs successfully, you can run the following command to see the output file it has generated.
-1
-ls output
+    8. Once the word count runs successfully, you can run the following command to see the output file it has generated.
 
-Copied!
+            ls output
 
-Wrap Toggled!
+        You should see part-r-00000 with _SUCCESS indicating that the wordcount has been done.
 
-Executed!
-You should see part-r-00000 with _SUCCESS indicating that the wordcount has been done.
+        While it is still processing, you may only see ‘_temporary’ listed in the output directory. Wait for a couple of minutes and run the command again till you see output as shown above.
 
-While it is still processing, you may only see ‘_temporary’ listed in the output directory. Wait for a couple of minutes and run the command again till you see output as shown above.
+    9. Run the following command to see the word count output.
 
-Run the following command to see the word count output.
-1
-cat  output/part-r-00000
+            cat  output/part-r-00000
 
-Copied!
+    Local wordcount output
+    The image below shows how the MapReduce wordcount happens.
 
-Wrap Toggled!
-
-Executed!
-Local wordcount output
-The image below shows how the MapReduce wordcount happens.
-
+![alt text](image.png)
