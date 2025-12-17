@@ -76,3 +76,26 @@ A Hadoop cluster is a collection of computers, known as nodes, that are networke
     
         hdfs dfs -cat /user/root/data.txt
 
+
+
+## View the HDFS
+    Click the button below or click on the Skills Network button on the left, it will open the “Skills Network Toolbox”. Then click the Other then Launch Application. From there you should be able to enter the port number as 9870 and launch.
+    View HDFS
+
+
+    This will open up the Graphical User Interface (GUI) of the Hadoop node. Click on Utilities -> Broswe the file system to browse the files.
+        
+        ![alt text](image-2.png)
+    
+    View the files in the directories that you have just created by clicking on user then root.
+
+        ![alt text](image-3.png)
+
+        ![alt text](image-4.png)
+
+        ![alt text](image-5.png)
+    Notice that the block size is 128 MB though the file size is actually much smaller. This is because the default block size used by HDFS is 128 MB.
+
+    You can click on the file to check the file into. It gives you information about the file in terms of number of bytes, block id etc.,
+
+        ![alt text](image-6.png)
